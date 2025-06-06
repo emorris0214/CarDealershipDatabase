@@ -100,7 +100,7 @@ ALTER TABLE
 	vehicles
 ADD
 	leased
-BOOLEAN DEFAULT FALSE;
+BOOLEAN DEFAULT FALSE; -- Didn't know you could Alter tables with function command alter, i believe you can add and delete?
 
 UPDATE
 	vehicles
@@ -113,4 +113,15 @@ SET
     '7HGCM82633A444444'
     );
 	
+-- Create test .sql scripts with the following queries to verify that your database
+-- has been created and has been populated correctly. Each of these queries should
+-- be in their own .sql file and SHOULD NOT be included in the main database
+-- script.
+-- 1. Get all dealerships
+-- 2. Find all vehicles for a specific dealership
+-- 3. Find a car by VIN
+-- 4. Find the dealership where a certain car is located, by VIN
+-- 5. Find all Dealerships that have a certain car type (i.e. Red Ford Mustang)
+-- 6. Get all sales information for a specific dealer for a specific date range
+
     
